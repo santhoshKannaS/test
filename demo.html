@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
+  <link rel="stylesheet" href="bootstrap-dynamic-tabs.css">
+  
+</head>
+<body>
+  
+  <ul class="nav nav-tabs tabsbar nav-justified" role="tablist">
+    <li class="active"><a href="#per" role="tab" id="pers" data-toggle="tab">Personal Details</a></li>
+    <li class="disabled"><a href="#comp" role="tab" data-toggle="tab" id="comps" disabled>Company Details</a></li>
+    <li class="disabled"><a href="#ema" role="tab" data-toggle="tab" id="emas">Email Verification</a></li>
+  </ul>
+  
+  <div class="container">
+   
+    <div class="row">
+      
+     <div class="col-sm-12">
+        
+    
+    <!-- Tab panes -->
+   
+      <div class="tab-content" id="myTabs">
+        <div class="tab-pane active" id="per">
+          <!--  next div Person Details-->
+          <div class="container bg-grey">
+            <div class="row listnow">
+              <div class="par col-sm-6 col-sm-offset-3 heading">
+                <h3>Add your personal details</h3>
+                  <p>Lorem ispum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+              <div class="col-sm-9">
+             
+              
+
+
+
+                <form class="form-horizontal form-content" role="form">
+                <div class="form-group">
+                  <label for="uname">Full name:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                 
+                </div>
+                
+
+
+                <div class="form-group">
+                  <label for="fname">Gender</label>
+                  <div class="form-group">
+                      <input type="submit" class="btn btn-default" value="Male">
+                       <input type="submit" class="btn btn-default" value="Female">
+                       <input type="submit" class="btn btn-default" value="other">
+                  </div>   
+                </div>
+
+
+                 <div class="form-group">
+                            <label for="states">Country</label>
+							              <select id="states" class="form-control" name="state">
+								               <option value="India">India</option>
+								               <option value="japan">japan</option>
+								              <option value="china">china</option>
+							              </select>
+                 </div>
+    
+                <div class="form-group">
+                            <label for="states">Select your State</label>
+							              <select id="states" class="form-control" name="state">
+								               <option value="Tamil nadu">Tamil nadu</option>
+								               <option value="Tamil nadu">Tamil nadu</option>
+								              <option value="Tamil nadu">Tamil nadu</option>
+			                      </select>
+                </div>
+
+
+
+              
+
+                <div class="form-group">
+                  <label for="phn">Phone number:</label>
+                  <input type="phonenumber" class="form-control" id="phn" placeholder="Enter phone" name="phn" required>
+                  
+                </div>
+              
+                
+                
+                <button type="submit" class="btn btn-primary">Next</button>
+
+                <div style="text-align: center;margin-top: 1rem;">
+                  <p>Already have an account? <a href="#comp" role="tab" data-toggle="tab" id="comps">Login here</a>.</p>
+              </div>
+              </form>
+
+       
+          </div>
+          </div>
+          </div>
+          </div>
+
+          
+         
+
+
+          <!-- next Company Details-->
+          <div class="tab-pane" id="comp">
+            <div class="container">
+             <div class="row listnow">
+              <div class="col-sm-6 col-sm-offset-3 heading">
+                <h3>Add your Company Details</h3>
+                  <p>Lorem ispum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+             <div class="col-sm-9">
+              <form class="form-horizontal form-content" role="form">
+
+              <div class="form-group">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/5kjw0xw/icons8-image-24.png" alt="icons8-image-24" border="4px"  width="50" height="50"></a><br />
+                <p style="margin-top: -7%;margin-left: 13%;padding: 8px;color: #ff9933;">Upload an image</p>
+              </div>
+
+
+              <div class="form-group">
+                  <label for="fname">Company name</label>
+                  <input type="text" id="fname" class="form-control" name="fname" placeholder="Example: John" required>
+              </div>
+                
+              <div class="form-group">
+                  <label for="fname">Email Id</label>
+                  <input type="text" id="Email" class="form-control" name="Email" placeholder="Example: John" required>
+              </div>
+    
+              <div class="form-group">
+                  <label for="fname">Job Tittle</label>
+                  <input type="text" id="Job" class="form-control" name="Job" placeholder="Example: John" required>
+              </div>
+    
+              <div class="form-group">
+                  <label for="fname">Years of experience</label>
+                  <input type="text" id="exp" class="form-control" name="exp" placeholder="Example: John" required>
+              </div>
+
+              <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="checkbox" id="check" class="form-check-input" name="check" required>
+                       I accept the terms and condition
+                  </label>
+             </div>
+
+              <div class="form-group">
+                <div>
+                    <a href="#per" role="tab" data-toggle="tab" id="pers" class="btn btn-lg btn-primary pull-left   " role="button">Back</a>
+                    <!-- <a href="#ema" role="tab" data-toggle="tab" id="emas" class="btn btn-lg btn-primary pull-left " role="button">Send OTP</a   -->
+                      <button type="submit" class="btn btn-primary">Send OTP</button>
+                </div>
+             </div>
+
+                
+               </form>
+              </div>
+             </div>
+           </div>
+          </div>
+
+
+
+
+
+
+           <!--next Email Verification-->
+           <div class="tab-pane" id="ema">
+            <div class="container">
+             <div class="row listnow">
+              <div class="col-sm-6 col-sm-offset-3 heading">
+                <h3>Add your personal details</h3>
+                  <p>For your security we need to verify the email We sent a 5 digit</p>
+                  <p style="margin-left: 10px;">code to abc@gmail.com Please enter below</p>
+              </div>
+            <div class="col-sm-9">
+             <form class="form-horizontal form-content" role="form">
+              
+              <div id="form">
+                <p style="padding-left: 5%;">Enter your code</p>
+                <input id="part" input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"required />
+                <input id="part1" input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" required/>
+                <input id="part2" input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" required />
+                <input id="part3" input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" required />
+                <input id="part4" input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" required />
+                
+              </div>
+              
+              <div style="margin-left: 25%;margin-top: 10px;">
+
+                <button id="save" type="submit" class="btn btn-primary">Verify</button>
+              </div>
+              
+              
+
+
+              <div>
+                <p style="padding-left:5%;margin-top: 1%;">Dont receive an email please check an spam</p>
+              <div style="margin-left: 15%;margin-top: 1%;"><a href="#">Send code again</a><br /> </div>
+              </div>
+            
+              </form>
+             </div>
+            </div>
+           </div>
+          </div>
+      </div>
+     </div>
+   </div>	
+  </div>
+<!-- </div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+	$("#myTabs form").on('submit',function(e) {
+  e.preventDefault();
+
+  var li_count = $('.nav-tabs li').length;
+  var current_active = $('.nav-tabs li.active').index();
+
+  if(current_active<li_count){
+    $('.nav-tabs li.active').next('li').find('a').attr('data-toggle','tab').tab('show');
+  }else{
+    alert('Last Step');
+  }
+});
+
+
+var uname = document.getElementById('uname'),
+    phn = document.getElementById('phn'),
+    saveButton = document.getElementById('save');
+    fname = document.getElementById('fname');
+    Email = document.getElementById('Email');
+    Job = document.getElementById('Job');
+    exp = document.getElementById('exp');
+    check = document.getElementById('check');
+    part = document.getElementById('part');
+    part1 = document.getElementById('part1');
+    part2 = document.getElementById('part2');
+    part3 = document.getElementById('part3');
+    part4 = document.getElementById('part4');
+
+var localStore = {
+  saveLocalStorage: function() {
+    localStorage.setItem('item', JSON.stringify(this.getInputValue()));
+  },
+  loadLocalStorage: function() {
+    var store = JSON.parse(localStorage.getItem('item'));
+    if ( store ) {
+      uname.value = store.uname;
+      phn.value = store.phn;
+      fname.value = store.fname;
+      Email.value = store.Email;
+      Job.value = store.Job;
+      exp.value = store.exp;
+      check.value = store.check;
+      part.value = store.part;
+      part1.value = store.part1;
+      part2.value = store.part2;
+      part3.value = store.part3;
+      part4.value = store.part4;
+
+    } 
+  },
+  clearLocalStorage: function() {
+    localStorage.removeItem('item');
+  },
+  getInputValue: function() {
+    return {
+      uname: uname.value,
+      phn: phn.value,
+      fname: fname.value,
+      Email: Email.value,
+      Job: Job.value,
+      exp: exp.value,
+      check: check.value,
+      part: part.value,
+      part1: part.value1,
+      part2: part.value2,
+      part3: part.value3,
+      part4: part.value4
+      
+
+    }
+  }
+};
+
+saveButton.addEventListener('click', function() {
+  localStore.saveLocalStorage();
+	uname.value = '';
+  phn.value = '';
+  fname.value = '';
+  Email.value = '';
+  Job.value = '';
+  exp.value = '';
+  check.value = '';
+  part.value = '';
+  part1.value = '';
+  part2.value = '';
+  part3.value = '';
+  part4.value = '';
+  if(uname.value='')
+  {
+    alert("enter values")
+  }
+}, false);
+  </script>
+</body>
+</html>
